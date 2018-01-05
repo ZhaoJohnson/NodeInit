@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Portal</title>
+    <!-- <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font/iconfont.css" rel="stylesheet" type="text/css"> -->
+    <link href="dist/css/main.css" rel="stylesheet" type="text/css">
+    <!--<script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+<!--页面容器-->
+<div class="login-container page-container"> 
+    <!--主体-->
+    <div class="content">
+        <!-- LOGO -->
+        <div class="header-login">
+            <i class="iconfont">&#xe6a4;</i>
+        </div>
+        <!-- LOGO end -->
+        <!-- content  -->
+        <div class="content-main">
+            <div class="panel panel-default panel-style">
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="row form-group">
+                            <label class="col-xs-2 control-label"><i class="iconfont">&#xe60b;</i></label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="name"
+                                       placeholder="请输入用户名">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label  class="col-xs-2 control-label"><i class="iconfont">&#xe611;</i></label>
+                            <div class="col-xs-10">
+                                <input type="password" class="form-control" id="password"
+                                       placeholder="请输入密码">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <p class="login">
+                <button type="button" class="btn btn-warning  btn-block" id="submit">登录</button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-block">Sign in with Facebook</button>
+                <button type="button" class="btn btn-success btn-block">Sign in with Twitter</button>
+            </p>
+            <!-- 按钮 end -->
+
+        </div>
+        <!-- content  end  -->
+    </div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">提示</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                    <!-- <button type="button" class="btn btn-primary">提交更改</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框（Modal） end-->
+</div>
+<script type="text/javascript" src="lib/requirejs/require.js" data-main="js/index"></script>
+</body>
+</html>

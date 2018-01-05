@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--用以声明当前页面用chrome内核来渲染。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <!--实现屏幕适配 device-width 设备宽度 initial-scale初始化缩放比例  minimum-scale 允许用户缩放比例  user-scalable 允许使用者缩放（0/1/yes/no -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Portal</title>
+    <!-- <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font/iconfont.css" rel="stylesheet" type="text/css"> -->
+    <link href="dist/css/main.css" rel="stylesheet" type="text/css">
+    <!--<script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>--> 
+</head>
+<body>
+<div class="container">
+    <div class="div-list">
+        <ul>
+            <li>23</li>
+            <li>23</li>
+            <li>23</li>
+            <li>23</li>
+        </ul>
+    </div>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="lib/requirejs/require.js" data-main="js/demo"></script>
+</body>
+</html>
